@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lumina Luxe - Premium lighting solutions for every space"
+    />
+    <title>Lumina Luxe | Premium Lighting Solutions</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header navigation -->
+    <header class="main-header">
+      <div class="header-container">
+        <div class="logo-container">
+          <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <h1 class="logo"><i class="fas fa-lightbulb"></i>LUMINA LUXE</h1>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="desktop-cart">
+              <a href="#cart" class="cart-link">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Mobile cart button -->
+        <a
+          href="#cart"
+          class="cart-btn mobile-cart-btn"
+          aria-label="Shopping cart"
+        >
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Illuminate Your Space</h1>
+        <p>
+          Premium lighting solutions that transform any environment into a work
+          of art
+        </p>
+        <a href="#products" class="btn btn-primary">Discover Collection</a>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+      <div class="container">
+        <div class="section-header">
+          <h2>Lighting Categories</h2>
+          <p>Explore our premium lighting collections</p>
+        </div>
+        <div class="categories-grid">
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053"
+              alt="Chandeliers"
+              class="category-image"
+            />
+            <div class="category-overlay">
+              <h3 class="category-title">Chandeliers</h3>
+              <a href="#" class="btn btn-secondary">View Collection</a>
+            </div>
+          </div>
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1580477667995-2b94f01c9516?q=80&w=2070"
+              alt="Pendant Lights"
+              class="category-image"
+            />
+            <div class="category-overlay">
+              <h3 class="category-title">Pendant Lights</h3>
+              <a href="#" class="btn btn-secondary">View Collection</a>
+            </div>
+          </div>
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=2052"
+              alt="LED Strip Lights"
+              class="category-image"
+            />
+            <div class="category-overlay">
+              <h3 class="category-title">LED Strip Lights</h3>
+              <a href="#" class="btn btn-secondary">View Collection</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Lighting</h2>
+          <p>Our premium selection of lighting solutions</p>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="chandeliers">
+            Chandeliers
+          </button>
+          <button class="filter-btn" data-category="pendants">Pendants</button>
+          <button class="filter-btn" data-category="led">LED Strips</button>
+          <button class="filter-btn" data-category="floor">Floor Lamps</button>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-badge">Popular</span>
+              <img
+                src="https://images.unsplash.com/photo-1505692952047-1a78307da8f2?q=80&w=2070"
+                alt="Crystal Chandelier"
+              />
+            </div>
+            <div class="product-info">
+              <h3><span>Crystal Cascade</span> Chandelier</h3>
+              <div class="product-category">Chandeliers</div>
+              <p class="product-description">
+                Elegant crystal chandelier with hand-cut crystals and
+                gold-plated frame.
+              </p>
+              <div class="product-price">$899.99</div>
+              <div class="product-buttons">
+                <button class="btn btn-secondary">Details</button>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=2070"
+                alt="Modern Pendant Light"
+              />
+            </div>
+            <div class="product-info">
+              <h3><span>Modern Orb</span> Pendant Light</h3>
+              <div class="product-category">Pendants</div>
+              <p class="product-description">
+                Sleek minimalist pendant light with dimmable LED lighting and
+                brushed brass finish.
+              </p>
+              <div class="product-price">$349.99</div>
+              <div class="product-buttons">
+                <button class="btn btn-secondary">Details</button>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-badge">Smart</span>
+              <img
+                src="https://images.unsplash.com/photo-1531685250784-7569952593d2?q=80&w=1974"
+                alt="LED Strip Lights"
+              />
+            </div>
+            <div class="product-info">
+              <h3><span>ColorFlow</span> Smart LED Strips</h3>
+              <div class="product-category">LED Strips</div>
+              <p class="product-description">
+                16 million colors, voice control, and app integration for
+                dynamic lighting effects.
+              </p>
+              <div class="product-price">$129.99</div>
+              <div class="product-buttons">
+                <button class="btn btn-secondary">Details</button>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1580477667995-2b94f01c9516?q=80&w=2070"
+                alt="Industrial Pendant"
+              />
+            </div>
+            <div class="product-info">
+              <h3><span>Industrial Edge</span> Pendant Light</h3>
+              <div class="product-category">Pendants</div>
+              <p class="product-description">
+                Raw metal finish with Edison bulb for a vintage industrial
+                aesthetic.
+              </p>
+              <div class="product-price">$279.99</div>
+              <div class="product-buttons">
+                <button class="btn btn-secondary">Details</button>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1607532941433-304659e8198a?q=80&w=1978"
+                alt="Arc Floor Lamp"
+              />
+            </div>
+            <div class="product-info">
+              <h3><span>Golden Arc</span> Floor Lamp</h3>
+              <div class="product-category">Floor Lamps</div>
+              <p class="product-description">
+                Elegant arc lamp with adjustable height and dimmable LED
+                lighting.
+              </p>
+              <div class="product-price">$459.99</div>
+              <div class="product-buttons">
+                <button class="btn btn-secondary">Details</button>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-badge">New</span>
+              <img
+                src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=2070"
+                alt="Modern Chandelier"
+              />
+            </div>
+            <div class="product-info">
+              <h3><span>Minimalist</span> Linear Chandelier</h3>
+              <div class="product-category">Chandeliers</div>
+              <p class="product-description">
+                Contemporary design with integrated LED lights and polished
+                chrome finish.
+              </p>
+              <div class="product-price">$749.99</div>
+              <div class="product-buttons">
+                <button class="btn btn-secondary">Details</button>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Choose Lumina Luxe</h2>
+          <p>Premium quality and exceptional service</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3 class="feature-title">Premium Quality</h3>
+            <p>
+              Handcrafted lighting fixtures using the finest materials and
+              expert craftsmanship.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3 class="feature-title">Free Shipping</h3>
+            <p>
+              Free delivery on all orders over $500 with secure and insured
+              shipping.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3 class="feature-title">Energy Efficient</h3>
+            <p>LED technology that reduces energy consumption by up to 80%.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="feature-title">Expert Support</h3>
+            <p>
+              Lighting specialists available to help you choose the perfect
+              fixtures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Customer Experiences</h2>
+          <p>What our clients say about us</p>
+        </div>
+        <div class="testimonials-container">
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "The Crystal Cascade chandelier transformed our dining room into
+              an elegant space. The quality is exceptional and the customer
+              service was outstanding. Highly recommend Lumina Luxe for anyone
+              looking for premium lighting solutions."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://randomuser.me/api/portraits/women/65.jpg"
+                alt="Sarah Johnson"
+                class="author-avatar"
+              />
+              <div class="author-info">
+                <h4>Sarah Johnson</h4>
+                <div class="author-role">Interior Designer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-about">
+            <div class="footer-logo">
+              <div class="logo">
+                <i class="fas fa-lightbulb"></i>LUMINA LUXE
+              </div>
+            </div>
+            <p>
+              Premium lighting solutions that transform spaces with elegance and
+              innovation. We bring artistry to illumination.
+            </p>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Pinterest"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#categories">Categories</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h3>Categories</h3>
+            <ul>
+              <li><a href="#">Chandeliers</a></li>
+              <li><a href="#">Pendant Lights</a></li>
+              <li><a href="#">LED Strip Lights</a></li>
+              <li><a href="#">Floor Lamps</a></li>
+              <li><a href="#">Wall Sconces</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 Lighting Avenue, Design
+              District, NY 10001
+            </p>
+            <p><i class="fas fa-phone"></i> +1 (212) 555-7890</p>
+            <p><i class="fas fa-envelope"></i> info@luminaluxe.com</p>
+            <p><i class="fas fa-clock"></i> Mon-Fri: 9am - 6pm</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Lumina Luxe. All rights reserved. | Designed with
+            <i class="fas fa-heart" style="color: var(--accent-gold)"></i> for
+            lighting enthusiasts
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
